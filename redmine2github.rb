@@ -111,7 +111,7 @@ redmine_issues.each do |row|
   # check for exporting commit
   if options[:redmine]
    r = options[:redmine]
-   url = "#{r[1]}/issues/show/#{issue_num}?format=atom&key=#{r[0]}"
+   url = "#{r[1]}/issues/#{issue_num}.atom?&key=#{r[0]}"
    
    comments = []
   
